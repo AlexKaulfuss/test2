@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Booking Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Luxe Nail Studio</h1>
+        <p>Book your next appointment below</p>
+    </header>
+
+    <main>
+        <section id="service-container">
+            <h2>Our Services</h2>
+            <div id="service-list"></div>
+        </section>
+
+        <section id="booking-section">
+            <h2>Book Appointment</h2>
+            <form id="booking-form">
+                <input type="text" id="client-name" placeholder="Full Name" required>
+                <input type="email" id="client-email" placeholder="Email Address" required>
+                
+                <label for="service-select">Selected Service:</label>
+                <input type="text" id="service-select" readonly required>
+
+                <label for="appt-date">Date & Time:</label>
+                <input type="datetime-local" id="appt-date" required>
+
+                <button type="submit" id="submit-btn">Confirm Booking</button>
+            </form>
+            <div id="confirmation-msg"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
